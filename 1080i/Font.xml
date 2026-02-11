@@ -2,14 +2,27 @@
 <fonts>
 
     <fontset id="Default" unicode="false">
-        <include>Font_Default_Inter</include>
+        <include>Font_Default_Exo2</include>
+    </fontset>
+
+    <fontset id="Font_Default_Exo2" unicode="false">
+        <include content="Font_Default">
+            <param name="font_bold">Exo2-Bold.ttf</param>
+            <param name="font_regular">Exo2-Regular.ttf</param>
+            <param name="font_light">Exo2-Light.ttf</param>
+            <param name="plot_linespacing_head">1.169</param>
+            <param name="plot_linespacing_midi">1.50</param>
+            <param name="plot_linespacing_main">1.16</param>
+            <param name="plot_linespacing_mini">1.31</param>
+            <param name="plot_linespacing_tiny">1.23</param>
+        </include>
     </fontset>
 
     <fontset id="Default (Unicode)" unicode="true">
-        <include content="Font_Default_Inter">
-            <param name="font_bold">resource://resource.font.robotocjksc/Inter-Unicode-Bold.ttf</param>
-            <param name="font_regular">resource://resource.font.robotocjksc/Inter-Unicode-Regular.ttf</param>
-            <param name="font_light">resource://resource.font.robotocjksc/Inter-Unicode-Regular.ttf</param>
+        <include content="Font_Default_Exo2">
+            <param name="font_bold">Exo2-Bold.ttf</param>
+            <param name="font_regular">Exo2-Regular.ttf</param>
+            <param name="font_light">Exo2-Light.ttf</param>
             <param name="style_light">light</param>
 
             <param name="plot_linespacing_head">1.03</param>
@@ -101,4 +114,3 @@
     </fontset>
 
 </fonts>
-
