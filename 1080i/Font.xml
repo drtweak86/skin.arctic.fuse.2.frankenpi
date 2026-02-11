@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
 
+    <!-- Default points to the Exo2 fontset so standard UI text stays on Exo2. -->
     <fontset id="Default" unicode="false">
         <include>Font_Default_Exo2</include>
     </fontset>
@@ -18,6 +19,7 @@
         </include>
     </fontset>
 
+    <!-- Unicode fontset keeps a Roboto fallback pulled from the resource font so broad scripts still render. -->
     <fontset id="Default (Unicode)" unicode="true">
         <include content="Font_Default_Exo2">
             <param name="font_bold">resource://resource.font.roboto/Roboto-Bold.ttf</param>
