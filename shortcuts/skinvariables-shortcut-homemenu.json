@@ -56,6 +56,14 @@
         ]
     },
     {
+        "label": "Search",
+        "path": "ActivateWindow(1185)",
+        "icon": "special://skin/extras/icons/search.png",
+        "target": "",
+        "sidemenu_guid": "guid-search-home",
+        "guid": "guid-search-item"
+    },
+    {
         "label": "Add-ons",
         "path": "ActivateWindow(1132)",
         "icon": "special://skin/extras/icons/addon.png",
