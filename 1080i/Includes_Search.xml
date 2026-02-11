@@ -75,6 +75,75 @@
         <include>View_Dialog_Plot</include>
     </include>
 
+    <include name="Search_Backdrop_Netflix">
+        <control type="group">
+            <visible>Window.IsVisible(1185)</visible>
+            <left>0</left>
+            <right>view_width</right>
+            <top>0</top>
+            <bottom>view_height</bottom>
+            <control type="image">
+                <aspectratio>stretch</aspectratio>
+                <texture>special://skin/extras/textures/main.png</texture>
+                <colordiffuse>main_bg</colordiffuse>
+            </control>
+            <control type="image">
+                <aspectratio>stretch</aspectratio>
+                <texture>special://skin/extras/textures/menumain_overlay.png</texture>
+                <colordiffuse>main_bg_10</colordiffuse>
+                <alpha>50</alpha>
+            </control>
+            <control type="group">
+                <left>0</left>
+                <right>view_width</right>
+                <top>0</top>
+                <bottom>view_height</bottom>
+                <animation effect="fade" start="0" end="80" time="400">Conditional</animation>
+                <control type="gradient">
+                    <top>0</top>
+                    <bottom>view_height</bottom>
+                    <color1>main_bg_0</color1>
+                    <color2>main_bg</color2>
+                    <angle>90</angle>
+                </control>
+            </control>
+        </control>
+    </include>
+
+    <include name="Search_List_Poster_Row">
+        <param name="id" />
+        <param name="item_w">view_banner_item_w</param>
+        <param name="item_h">view_banner_item_h</param>
+        <param name="itemlayout_w">view_banner_itemlayout_w</param>
+        <param name="itemlayout_h">view_banner_itemlayout_h</param>
+        <param name="itemlayout_include">Layout_Poster</param>
+        <param name="offset_y">120</param>
+        <param name="detailed">true</param>
+        <param name="preloaditems">6</param>
+        <param name="hidden_button_enabled">true</param>
+        <definition>
+            <include content="List_Core">
+                <param name="id">$PARAM[id]</param>
+                <param name="orientation">horizontal</param>
+                <param name="control">fixedlist</param>
+                <param name="preloaditems">$PARAM[preloaditems]</param>
+                <param name="item_w">$PARAM[item_w]</param>
+                <param name="item_h">$PARAM[item_h]</param>
+                <param name="itemlayout_w">view_width</param>
+                <param name="itemlayout_h">$PARAM[itemlayout_h]</param>
+                <param name="itemlayout_include">$PARAM[itemlayout_include]</param>
+                <param name="offset_x">0</param>
+                <param name="offset_y">$PARAM[offset_y]</param>
+                <param name="hidden_button_enabled">$PARAM[hidden_button_enabled]</param>
+                <param name="hidden_button">List_Widget_Row_HiddenButton</param>
+                <param name="viewtype">wall</param>
+                <param name="scrolltime">300</param>
+                <param name="tween">quadratic</param>
+                <param name="hidden_button_prefix">SearchPoster</param>
+            </include>
+        </definition>
+    </include>
+
     <include name="Search_View_Selector">
         <control type="group">
             <control type="group">
