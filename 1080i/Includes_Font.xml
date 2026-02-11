@@ -128,9 +128,9 @@
     </include>
 
     <include name="Font_Default">
-        <param name="font_bold">RobotoCondensed-Bold.ttf</param>
-        <param name="font_regular">RobotoCondensed-Regular.ttf</param>
-        <param name="font_light">RobotoCondensed-Light.ttf</param>
+        <param name="font_bold">Exo2-Bold.ttf</param>
+        <param name="font_regular">Exo2-Regular.ttf</param>
+        <param name="font_light">Exo2-Light.ttf</param>
 
         <param name="style_bold" />
         <param name="style_light" />
