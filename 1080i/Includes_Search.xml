@@ -269,19 +269,23 @@
         <onunload condition="!String.IsEmpty(Control.GetLabel(9099).index(1))">RunScript(script.skinvariables,add_skinstring_history=SearchHistory,value=$VAR[Path_SearchTerm])</onunload>
     </include>
 
-    <include name="Search_Panel_Edit">
-        <control type="edit" id="9099">
-            <height>80</height>
-            <left>40</left>
-            <right>40</right>
-            <centertop>100</centertop>
-            <textcolor>dialog_fg_70</textcolor>
-            <font>font_midi_bold</font>
-            <textoffsetx>40</textoffsetx>
-            <align>left</align>
-            <ondown>9992</ondown>
-            <onright>5000</onright>
-            <onleft>noop</onleft>
+        <include name="Search_Panel_Edit">
+            <control type="edit" id="9099">
+                <height>80</height>
+                <left>40</left>
+                <right>40</right>
+                <centertop>100</centertop>
+                <textcolor>dialog_fg</textcolor>
+                <focusedcolor>main_accent</focusedcolor>
+                <font>font_head</font>
+                <background>special://skin/extras/textures/box.png</background>
+                <bordertexture colordiffuse="shadow_soft">shadows/circle_50-shadow-40.png</bordertexture>
+                <bordertexturefocus colordiffuse="main_accent">shadows/circle_50-shadow-40.png</bordertexturefocus>
+                <textoffsetx>40</textoffsetx>
+                <align>left</align>
+                <ondown>9992</ondown>
+                <onright>5000</onright>
+                <onleft>noop</onleft>
             <onfocus condition="Skin.String(Home.MenuStyle,Ribbon)">SetProperty(Background.ShowOverlay,True,Home)</onfocus>
             <onfocus condition="![Skin.String(Home.MenuStyle,Ribbon)]">ClearProperty(Background.ShowOverlay,Home)</onfocus>
         </control>
